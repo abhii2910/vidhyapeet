@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./header.css";
-import Contact from "./Contact";
-import App from "./App";
-import Courses from "./course";
-import Place from "./places";
-import Footer from "./footer";
-import Certificate from "./certi";
-import Team from "./team";
-import StatsSection from "./about.jsx";
-import LOGIN from "./login.jsx";
+import Contact from "./Contact.jsx";
+import App from "./App.jsx";
+import Courses from "./Course.jsx";
+import Place from "./Places.jsx";
+import Footer from "./Footer.jsx";
+import Certificate from "./Certi.jsx";
+import Team from "./Team.jsx";
+import StatsSection from "./About.jsx";
+import LOGIN from "./Login.jsx";
 
 const Header = () => {
   const [showGalleryPopup, setShowGalleryPopup] = useState(false);
