@@ -1,0 +1,127 @@
+/* === Background Video Section === */
+.carousel-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Title Styling */
+.carousel-title {
+  position: absolute;
+  top: 5%; /* adjust for vertical placement */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #2f2d27ff, #ffd900ff, #f1ede0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  z-index: 10; /* make sure it's above images */
+  pointer-events: none; /* so it doesn't block button clicks */
+}
+
+
+
+.carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* behind carousel */
+}
+
+.carousel-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(0.8); /* optional darkening */
+}
+
+/* === Carousel Container === */
+.small-carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* allow full scaling */
+  z-index: 1; /* above video */
+}
+
+/* Track */
+.small-carousel .carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Each card */
+.small-carousel .carousel-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s ease, opacity 0.4s ease;
+  pointer-events: auto;
+  will-change: transform, opacity;
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image */
+.small-carousel .carousel-item img {
+  width: 910px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Navigation buttons */
+.small-carousel .nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 5;
+  transition: transform .18s ease, background .18s ease;
+}
+
+.small-carousel .nav-button.left {
+  left: -400px;
+}
+
+.small-carousel .nav-button.right {
+  right: -500px;
+}
+
+.small-carousel .nav-button:hover {
+  transform: translateY(-50%) scale(1.05);
+  background: #f5f5f5;
+}
+
+.small-carousel .nav-button:active {
+  transform: translateY(-50%) scale(0.95);
+}

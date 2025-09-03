@@ -1,0 +1,108 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem 0;
+  overflow: hidden; /* Prevent video overflow */
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill without distortion */
+  z-index: -1; /* Behind all content */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background-color: rgba(251, 246, 246, 0.6); /* Slight transparency so video is visible */
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+/* Container */
+.center-list-container {
+  background-color: rgba(255, 255, 255, 0.85); /* Slight transparency to see video */
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.center-list-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.center-list-container p {
+  text-align: center;
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.center-list-container .city-count {
+  color: #7c3aed;
+  font-weight: 500;
+}
+
+/* Grid */
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.city-card {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: 1px solid #000000ff;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.city-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.city-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
+.city-card span {
+  font-size: 1rem;
+  font-weight: 500;
+}

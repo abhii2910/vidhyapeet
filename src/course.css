@@ -1,0 +1,298 @@
+/* ===== Courses Section ===== */
+.courses-section {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: transparent; /* video visible */
+}
+
+/* ===== Background Video & Overlay ===== */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* ===== Content Wrapper ===== */
+.courses-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
+/* ===== Headings ===== */
+.course-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.course-subtext {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* ===== Courses Grid ===== */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* ✅ smaller min for phones */
+  gap: 2rem;
+  width: 100%;
+}
+
+/* ===== Course Card (Flip) ===== */
+.course-card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+}
+
+.course-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back Faces */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-front {
+  background: #fff;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: crimson;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.card-back {
+  background-color: #1a1a1a;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.card-back h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-back p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+/* ===== Buttons ===== */
+.view-button {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #f0f0f0;
+}
+
+.view-more-wrapper {
+  margin-top: 30px;
+}
+
+.view-more-button {
+  background: linear-gradient(135deg, #0a53ff, #182848);
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.view-more-button:hover {
+  background: linear-gradient(135deg, #00ff37ff, #2600ffff);
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* ===== Modal Overlay ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* ===== Modal Box ===== */
+.modal-content {
+  background: #bc7d7dff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+/* Modal Image */
+.modal-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Badge */
+.modal-badge {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .card-inner {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-header {
+    font-size: 2rem;
+  }
+
+  .course-subtext {
+    font-size: 1rem;
+  }
+
+  .card-inner {
+    height: 280px; /* ✅ reduce height on tablet */
+  }
+
+  .card-back h2 {
+    font-size: 1rem;
+  }
+
+  .card-back p {
+    font-size: 0.85rem;
+  }
+
+  .modal-content {
+    padding: 15px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-header {
+    font-size: 1.6rem;
+  }
+
+  .course-subtext {
+    font-size: 0.9rem;
+  }
+
+  .card-inner {
+    height: 240px; /* ✅ smaller height for small phones */
+  }
+
+  .card-back h2 {
+    font-size: 0.9rem;
+  }
+
+  .card-back p {
+    font-size: 0.8rem;
+  }
+
+  .view-button {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
