@@ -22,7 +22,7 @@ const teamMembers = [
   {
     id: 3,
     name: "PRAKASH",
-    role: "TEAM LEADER",
+    role: "MANAGER",
     img: "./src/assets/team2.jpg",
     linkedin: "https://www.linkedin.com/in/prakash-ramachandran-2868b2269",
     bgColor: "#ca9e7145",
