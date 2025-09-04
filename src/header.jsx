@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
 import Contact from "./Contact.jsx";
-import App from "./App.jsx";
 import Courses from "./Course.jsx";
 import Place from "./Places.jsx";
 import Footer from "./Footer.jsx";
@@ -86,7 +85,7 @@ const Header = () => {
               style={{
                 position: "absolute",
                 top: "20px",
-                left: "20px",
+                left: "10px",
                 padding: "8px 12px",
                 border: "none",
                 borderRadius: "6px",
@@ -94,6 +93,7 @@ const Header = () => {
                 color: "white",
                 cursor: "pointer",
                 fontWeight: "600",
+            
               }}
             >
               ✖
@@ -143,7 +143,7 @@ const Header = () => {
 
       {/* Sections */}
       <section id="home" className="section">
-        <App />
+      
         <StatsSection />
       </section>
 
