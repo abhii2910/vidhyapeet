@@ -52,7 +52,6 @@ export default function App() {
               </a>
             </div>
           </div>
-
           <div className="hero-image">
             <img src={heroImage} alt="Hero" />
           </div>
