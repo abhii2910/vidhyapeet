@@ -8,21 +8,18 @@ import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 
 import Certificates from './Certificates.jsx';
-
-
-
-import Header from './Header.jsx'
 import Course from './Course.jsx';
 import Places from './Places.jsx';
 import Team from './Team.jsx';
 import Login from './Login.jsx';
 import Footer from './Footer.jsx';
+import Headers from './Header.jsx';
 
 
 export default function App() {
   return (
     <>
-      < Header />
+      <Headers />
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-container">
