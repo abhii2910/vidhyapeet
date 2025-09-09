@@ -41,7 +41,7 @@ const coursesData = [
   { title: "React JS", description: "This course covers software development principles, including coding and application design.", image: React1, badge: "Live & Recorded" },
 ];
 
-export default function Courses() {
+export default function Course() {
   const [showAll, setShowAll] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
 
