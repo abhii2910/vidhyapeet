@@ -7,12 +7,12 @@ import heroImage from './assets/int.png'
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 
-import Certificates from './Certificates.jsx';
-import Course from './Course.jsx';
-import Places from './Places.jsx';
-import Team from './Team.jsx';
-import Login from './Login.jsx';
-import Footer from './Footer.jsx';
+import Certificate from './Certificates.jsx';
+import Courses from './Course.jsx';
+import Place from './Places.jsx';
+import Teams from './Team.jsx';
+import Logins from './Login.jsx';
+import Footers from './Footer.jsx';
 import Headers from './Header.jsx';
 
 
@@ -62,12 +62,12 @@ export default function App() {
       </section>
       {/* Other Sections */}
 
-      <Course />
-      <Places />
-      <Certificates />
-      <Team />
-      <Login />
-      <Footer />
+      <Courses />
+      <Place />
+      <Certificate />
+      <Teams />
+      <Logins />
+      <Footers />
     </>
   )
 }
