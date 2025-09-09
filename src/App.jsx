@@ -7,13 +7,13 @@ import heroImage from './assets/int.png'
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 
-import Certificate from './Certificates.jsx';
-import Courses from './Course.jsx';
-import Place from './Places.jsx';
-import Teams from './Team.jsx';
-import Logins from './Login.jsx';
-import Footers from './Footer.jsx';
-import Headers from './Header.jsx';
+import Certificate from './components/Certificates.jsx';
+import Courses from './components/Course.jsx';
+import Place from './components/Places.jsx';
+import Teams from './components/Team.jsx';
+import Logins from './components/Login.jsx';
+import Footers from './components/Footer.jsx';
+import Headers from './components/Header.jsx';
 
 
 export default function App() {
