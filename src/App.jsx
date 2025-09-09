@@ -5,7 +5,7 @@ import heroImage from './assets/int.png'
 
 // Social Icons
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
-import Header from './Header';
+import Header from './Header.jsx';
 import Courses from './Course.jsx';
 import App11 from './Places.jsx';
 import Certificates from './Certi.jsx';
