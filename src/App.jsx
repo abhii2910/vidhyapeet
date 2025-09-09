@@ -7,7 +7,7 @@ import heroImage from './assets/int.png'
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 
-import Certificates from './Certi.jsx';
+import Certificates from './Certificates.jsx';
 import Team from './Team.jsx';
 import LOGIN from './Login.jsx'
 import Footer from './Footer.jsx';
