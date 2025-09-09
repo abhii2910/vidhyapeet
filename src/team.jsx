@@ -3,13 +3,21 @@ import "./Team.css";
 import { FaLinkedin } from "react-icons/fa";
 
 const teamMembers = [
-  {
-    id: 1,
-    name: "DAVID BABU",
-    role: "TEAM LEADER",
-    img: "./src/assets/team.jpg",
-    linkedin: "https://www.linkedin.com/in/babu-p-a43634269",
-    bgColor: "#9b9b9b70",
+    {
+    id: 7,
+    name: "ABHISHEK SINGH",
+    role: "CEO",
+    img: "./src/assets/TEAM6.jpg",
+    linkedin: "https://www.linkedin.com/in/abhishek-singh-a1a801243",
+    bgColor: "#ca9e7145",
+  },
+    {
+    id: 3,
+    name: "PRAKASH",
+    role: "MANAGER",
+    img: "./src/assets/team2.jpg",
+    linkedin: "https://www.linkedin.com/in/prakash-ramachandran-2868b2269",
+    bgColor: "#ca9e7145",
   },
   {
     id: 2,
@@ -18,14 +26,6 @@ const teamMembers = [
     img: "./src/assets/team1.jpg",
     linkedin: "https://www.linkedin.com/in/aakash-k-5bab332b8",
     bgColor: "#3857a02e",
-  },
-  {
-    id: 3,
-    name: "PRAKASH",
-    role: "MANAGER",
-    img: "./src/assets/team2.jpg",
-    linkedin: "https://www.linkedin.com/in/prakash-ramachandran-2868b2269",
-    bgColor: "#ca9e7145",
   },
   
   {
@@ -53,12 +53,12 @@ const teamMembers = [
     bgColor: "#3857a02e",
   },
   {
-    id: 7,
-    name: "ABHISHEK SINGH",
-    role: "CEO",
-    img: "./src/assets/TEAM6.jpg",
-    linkedin: "https://www.linkedin.com/in/abhishek-singh-a1a801243",
-    bgColor: "#ca9e7145",
+    id: 1,
+    name: "DAVID BABU",
+    role: "TEAM LEADER",
+    img: "./src/assets/team.jpg",
+    linkedin: "https://www.linkedin.com/in/babu-p-a43634269",
+    bgColor: "#9b9b9b70",
   },
   {
     id: 8,
