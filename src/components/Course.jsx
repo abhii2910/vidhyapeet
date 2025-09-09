@@ -29,23 +29,23 @@ function CourseCard({ course, onViewDetails }) {
 }
 
 // Import images
-import webDevelopment from "./assets/web1.jpg";
-import AWS from "./assets/aws.png";
-import IOT from "./assets/iot.jpg";
-import CyberSecurity from "./assets/cyber.jpg";
-import VLSI from "./assets/vlsi.jpg";
-import CloudComputing from "./assets/cloud.jpg";
+import webDevelopment from "../assets/web1.jpg";
+import AWS from "../assets/aws.png";
+import IOT from "../assets/iot.jpg";
+import CyberSecurity from "../assets/cyber.jpg";
+import VLSI from "../assets/vlsi.jpg";
+import CloudComputing from "../assets/cloud.jpg";
 import AI from "./assets/ai.jpg";
-import MachineLearningPython from "./assets/mlpy.jpg";
-import Python from "./assets/python.jpg";
-import UIUX from "./assets/uiux.jpg";
-import AutoCADCatia from "./assets/auto.jpg";
-import HR from "./assets/hr.jpg";
-import Finace from "./assets/FINANCE.jpg";
-import DigitalMarketing from "./assets/DIGITAL MARKETING.jpg";
-import BDA from "./assets/bda.jpg";
-import Data from "./assets/DATA SCIENCE.jpg";
-import React1 from "./assets/React js.jpg";
+import MachineLearningPython from "../assets/mlpy.jpg";
+import Python from "../assets/python.jpg";
+import UIUX from "../assets/uiux.jpg";
+import AutoCADCatia from "../assets/auto.jpg";
+import HR from "../assets/hr.jpg";
+import Finace from "../assets/FINANCE.jpg";
+import DigitalMarketing from "../assets/DIGITAL MARKETING.jpg";
+import BDA from "../assets/bda.jpg";
+import Data from "../assets/DATA SCIENCE.jpg";
+import React1 from "../assets/React js.jpg";
 
 const coursesData = [
   { title: "WEB DEVELOPMENT (WD)", description: "Web development is the process of creating and maintaining websites and web applications...", image: webDevelopment, badge: "Live & Recorded" },

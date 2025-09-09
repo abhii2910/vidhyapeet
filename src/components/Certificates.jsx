@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./certi.css";
-import cert1 from "./assets/cer.png";
-import cert2 from "./assets/cer1.png";
-import cert3 from "./assets/cer3.png";
-import bgVideo from "./assets/back2.mp4"; // your background video
+import cert1 from "../assets/cer.png";
+import cert2 from "../assets/cer1.png";
+import cert3 from "../assets/cer3.png";
+import bgVideo from "../assets/back2.mp4"; // your background video
 
 const certificates = [
   { id: 1, image: cert1 },
