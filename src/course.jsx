@@ -2,6 +2,32 @@ import React, { useState } from "react";
 import "./course.css";
 import "./App.css";
 
+
+
+/* ===== Reusable Course Card Component ===== */
+function CourseCard({ course, onViewDetails }) {
+  const { title, image, badge } = course;
+
+  return (
+    <div className="course-card">
+      <div className="card-inner">
+        <div className="card-front">
+          <img
+            src={image || "https://via.placeholder.com/300"}
+            alt={title}
+            className="card-image"
+          />
+          <span className="card-badge">{badge}</span>
+        </div>
+        <div className="card-back">
+          <h2>{title}</h2>
+          <button className="view-button" onClick={onViewDetails}>VIEW DETAILS →</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Import images
 import webDevelopment from "./assets/web1.jpg";
 import AWS from "./assets/aws.png";
@@ -113,26 +139,4 @@ export default function Course() {
   );
 }
 
-/* ===== Reusable Course Card Component ===== */
-function CourseCard({ course, onViewDetails }) {
-  const { title, image, badge } = course;
 
-  return (
-    <div className="course-card">
-      <div className="card-inner">
-        <div className="card-front">
-          <img
-            src={image || "https://via.placeholder.com/300"}
-            alt={title}
-            className="card-image"
-          />
-          <span className="card-badge">{badge}</span>
-        </div>
-        <div className="card-back">
-          <h2>{title}</h2>
-          <button className="view-button" onClick={onViewDetails}>VIEW DETAILS →</button>
-        </div>
-      </div>
-    </div>
-  );
-}
