@@ -8,12 +8,14 @@ import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 
 import Certificates from './Certificates.jsx';
-import Team from './Team.jsx';
-import LOGIN from './Login.jsx'
+
+
 import Footer from './Footer.jsx';
 import Header from './Header.jsx'
 import Course from './Course.jsx';
 import Places from './Places.jsx';
+import Team from './Team.jsx';
+import Login from './Login.jsx';
 
 
 export default function App() {
@@ -66,7 +68,7 @@ export default function App() {
       <Places />
       <Certificates />
       <Team />
-      <LOGIN />
+      <Login />
       <Footer />
     </>
   )

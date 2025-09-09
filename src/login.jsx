@@ -199,7 +199,7 @@ const ProfilePage = ({ userData, onUpdateProfile }) => {
 };
 
 /* ---------------- Main App ---------------- */
-const App2 = () => {
+const Login = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeTab, setActiveTab] = useState('');
   const [mode, setMode] = useState("login");
@@ -365,4 +365,4 @@ const App2 = () => {
   );
 };
 
-export default App2;
+export default Login;
