@@ -6,13 +6,14 @@ import heroImage from './assets/int.png'
 // Social Icons
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
-import App11 from './Places.jsx';
+
 import Certificates from './Certi.jsx';
 import Team from './Team.jsx';
 import LOGIN from './Login.jsx'
 import Footer from './Footer.jsx';
 import Header from './Header.jsx'
 import Course from './Course.jsx';
+import Places from './Places.jsx';
 
 
 export default function App() {
@@ -62,7 +63,7 @@ export default function App() {
       {/* Other Sections */}
 
       <Course />
-      <App11 />
+      <Places />
       <Certificates />
       <Team />
       <LOGIN />

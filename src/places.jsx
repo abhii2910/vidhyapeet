@@ -8,7 +8,7 @@ const cities = [
   { name: 'Amaravati', style: { color: 'black' }, image: 'https://th.bing.com/th/id/OIP.xo9rlQZJydoTlCTtl6O7dAHaEK?w=265&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7' },
 ];
 
-function App11() {
+function Places() {
   return (
     <div className="app-container">
       {/* Background Video */}
@@ -38,4 +38,4 @@ function App11() {
   );
 }
 
-export default App11;
+export default Places;
