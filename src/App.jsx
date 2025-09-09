@@ -5,18 +5,19 @@ import heroImage from './assets/int.png'
 
 // Social Icons
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
-import Header from './Header.jsx';
 import Courses from './Course.jsx';
 import App11 from './Places.jsx';
 import Certificates from './Certi.jsx';
 import Team from './Team.jsx';
 import LOGIN from './Login.jsx'
 import Footer from './Footer.jsx';
+import Header from './Header.jsx'
+
 
 export default function App() {
   return (
     <>
-      <Header />
+      < Header />
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-container">
