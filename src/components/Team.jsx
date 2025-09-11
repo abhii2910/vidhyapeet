@@ -1,5 +1,5 @@
 import React from "react";
-import "./Team.css";
+import "./team.css";
 import { FaLinkedin } from "react-icons/fa";
 
 const teamMembers = [
