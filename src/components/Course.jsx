@@ -43,7 +43,7 @@ import AutoCADCatia from "../assets/auto.jpg";
 import HR from "../assets/hr.jpg";
 import Finace from "../assets/FINANCE.jpg";
 import DigitalMarketing from "../assets/DIGITAL MARKETING.jpg";
-import BDA from "../assets/bda.jpg";
+import BDA from "../assets/BDA.jpg";
 import Data from "../assets/DATA SCIENCE.jpg";
 import React1 from "../assets/React js.jpg";
 
