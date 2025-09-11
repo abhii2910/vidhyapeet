@@ -35,7 +35,7 @@ import IOT from "../assets/iot.jpg";
 import CyberSecurity from "../assets/cyber.jpg";
 import VLSI from "../assets/vlsi.jpg";
 import CloudComputing from "../assets/cloud.jpg";
-import AI from "./assets/ai.jpg";
+import AI from "../assets/ai.jpg";
 import MachineLearningPython from "../assets/mlpy.jpg";
 import Python from "../assets/python.jpg";
 import UIUX from "../assets/uiux.jpg";
