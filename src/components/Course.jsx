@@ -42,10 +42,10 @@ import UIUX from "../assets/uiux.jpg";
 import AutoCADCatia from "../assets/auto.jpg";
 import HR from "../assets/hr.jpg";
 import Finace from "../assets/FINANCE.jpg";
-import DigitalMarketing from "../assets/DIGITAL MARKETING.jpg";
+import DigitalMarketing from "../assets/DIGITALMARKETING.jpg";
 import BDA from "../assets/BDA.jpg";
-import Data from "../assets/DATA SCIENCE.jpg";
-import React1 from "../assets/React js.jpg";
+import Data from "../assets/DATASCIENCE.jpg";
+import React1 from "../assets/Reactjs.jpg";
 
 const coursesData = [
   { title: "WEB DEVELOPMENT (WD)", description: "Web development is the process of creating and maintaining websites and web applications...", image: webDevelopment, badge: "Live & Recorded" },
