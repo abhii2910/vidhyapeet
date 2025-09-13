@@ -9,6 +9,19 @@ import Team from "./Team.jsx";
 import StatsSection from "./About.jsx";
 import LOGIN from "./Login.jsx";
 
+
+import image2 from "../assets/gallery3.jpg"
+import image3 from "../assets/gallery5.jpg"
+import image4 from "../assets/gallery6.jpg"
+import image5 from "../assets/gallery1.jpg"
+
+import Video1 from "../assets/gallery2.mp4"
+import Video2 from "../assets/gallery4.mp4"
+import Video3 from "../assets/gallery8.mp4"
+import Video4 from "../assets/gallery9.mp4"
+
+
+
 const Header = () => {
   const [showGalleryPopup, setShowGalleryPopup] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
@@ -119,23 +132,23 @@ const Header = () => {
             </button>
 
             <div className="gallery-grid">
-              <img src="./src/assets/gallery3.jpg" alt="g1" />
+              <img src={image2} alt="g1" />
               <video autoPlay loop muted playsInline>
-                <source src="./src/assets/gallery2.mp4" type="video/mp4" />
+                <source src={Video1} type="video/mp4" />
               </video>
               <video autoPlay loop muted playsInline>
-                <source src="./src/assets/gallery4.mp4" type="video/mp4" />
+                <source src={Video2} type="video/mp4" />
               </video>
               <video autoPlay loop muted playsInline>
-                <source src="./src/assets/gallery8.mp4" type="video/mp4" />
+                <source src={Video3} type="video/mp4" />
               </video>
               <video autoPlay loop muted playsInline>
-                <source src="./src/assets/gallery9.mp4" type="video/mp4" />
+                <source src={Video4} type="video/mp4" />
               </video>
-              <img src="./src/assets/gallery7.jpg" alt="g2" />
-              <img src="./src/assets/gallery5.jpg" alt="g3" />
-              <img src="./src/assets/gallery6.jpg" alt="g4" />
-              <img src="./src/assets/gallery1.jpg" alt="g5" />
+              <img src={image2} alt="g2" />
+              <img src={image3} alt="g3" />
+              <img src={image4} alt="g4" />
+              <img src={image5} alt="g5" />
             </div>
           </div>
         </div>

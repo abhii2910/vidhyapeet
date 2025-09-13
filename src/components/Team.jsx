@@ -62,7 +62,7 @@ const teamMembers = [
   },
   {
     id: 8,
-    name: "ABISHEK BAGHEL",
+    name: "ABHISHEK BAGHEL",
     role: "IT",
     img: "./src/assets/TEAM7.jpg",
     linkedin: "https://www.linkedin.com/in/abhishekbaghel29",
