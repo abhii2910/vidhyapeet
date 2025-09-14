@@ -35,7 +35,7 @@ const Header = () => {
   if (showLogin) {
     return (
       <div className="login-fullscreen" style={{ position: "relative" }}>
-        <LOGIN />
+        <LOGIN  />
 
         {/* Back to Home button (top-right) */}
         <button
